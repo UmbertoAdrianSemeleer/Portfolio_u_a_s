@@ -1,0 +1,150 @@
+/* Import Quicksand Font */
+* {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #222;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* General Container Styling for Sections */
+.section-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* About Me Section */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.profile-pic-placeholder {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .profile-pic-placeholder {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 1rem;
+  }
+}
+
+/* Project Section */
+.project {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Button Style */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #0073e6;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+/* Contact Section */
+#contact a {
+  color: #0073e6; /* Match link color to your theme */
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+#contact a:hover {
+  color: #005bb5; /* Darker color on hover */
+}
+
+#contact i {
+  margin-right: 0.5rem; /* Add space between icon and text */
+  font-size: 2rem; /* Adjust size to make icons larger */
+}
+
+.contact-links {
+  display: flex;
+  gap: 1rem; /* Adds space between the icons */
+  justify-content: center; /* Center-align the icons */
+}
+
+#contact a {
+  color: #0073e6;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+#contact a:hover {
+  color: #005bb5;
+}
+
+#contact i {
+  margin-right: 0.5rem; /* Space between icon and text */
+}

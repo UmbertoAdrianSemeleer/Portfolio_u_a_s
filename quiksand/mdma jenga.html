@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDMA Jenga | Alex Morgan Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/project-description.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <!-- Placeholder for Header -->
+    <div id="header-placeholder"></div>
+
+    <main class="project-container">
+        <section class="project-header">
+            <h1>MDMA Jenga</h1>
+            <p class="project-summary">An educational and interactive game designed to raise awareness about the unpredictable effects of MDMA use, developed in collaboration with Novadic-Kentron during my minor at Embrace TEC.</p>
+        </section>
+
+        <section class="project-content">
+            <div class="project-image">
+                <img src="assets/images/project6.svg" alt="MDMA Jenga Project Cover">
+            </div>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p><strong>MDMA Jenga</strong> is an educational game aimed at raising awareness of the consequences and risks associated with MDMA use. The game uses the familiar Jenga format to simulate the randomness and potential dangers of MDMA effects, encouraging players to come to their own conclusions rather than enforcing a viewpoint. The project was developed in collaboration with <strong>Novadic-Kentron</strong>, a Dutch organization specializing in addiction care and rehabilitation, during my minor at <strong>Embrace TEC</strong>.</p>
+
+                <h3>Challenge</h3>
+                <p>The challenge was to prevent MDMA use at festivals and to encourage current users to reconsider their habits. Our approach focused on education and raising awareness without judgment, providing players with an interactive way to understand the risks and unpredictability of MDMA use.</p>
+
+                <h3>Development Process</h3>
+                <p>The development of MDMA Jenga involved several steps:</p>
+                <ul>
+                    <li><strong>Research:</strong> Conducted interviews with experts, former users, and the general public in Eindhoven to gather diverse perspectives on MDMA use.</li>
+                    <li><strong>Ideation:</strong> Used the SCAMPER ideation technique to brainstorm and refine the concept for the game.</li>
+                    <li><strong>Prototyping:</strong> Created a paper prototype, pitched it to experts, and iterated based on their feedback.</li>
+                    <li><strong>Game Design:</strong> Laser-cut Jenga pieces and designed gameplay mechanics, including dice rolls and deformed blocks to represent the drug’s effects.</li>
+                </ul>
+
+                <h3>Gameplay Features</h3>
+                <ul>
+                    <li><strong>Interactive Gameplay:</strong> Players interact with two Jenga stacks representing their health and emotional state before and after MDMA use.</li>
+                    <li><strong>Randomized Effects:</strong> Dice rolls and a black box of deformed blocks simulate the unpredictable nature of MDMA effects.</li>
+                    <li><strong>Educational Focus:</strong> The game serves as a conversation starter, encouraging players to discuss the risks and consequences of MDMA use.</li>
+                </ul>
+
+                <h3>Outcome</h3>
+                <p>The final product is an educational game that raises awareness about the dangers of MDMA use. Players experience how MDMA can destabilize health and emotions, sparking conversations about substance abuse. The client, Novadic-Kentron, plans to use MDMA Jenga as an icebreaker in therapy sessions to help patients open up about their experiences.</p>
+
+                <h3>Reflection</h3>
+                <p>Discussing MDMA use was a complex topic due to the diverse opinions surrounding drug use and the need to remain neutral. It was challenging to create a solution that educated without judgment, but this project deepened my understanding of addiction and its effects on individuals and their communities. I’m proud that our solution provides an engaging way to start meaningful conversations.</p>
+
+                
+            </div>
+        </section>
+
+        <!-- Return Button -->
+        <div class="return-button">
+            <a href="index.html#projects" class="btn">← Return to Projects</a>
+        </div>
+
+    </main>
+
+    <!-- Placeholder for Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts to Load Header and Footer -->
+    <script>
+        // Load header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+
+        // Load footer
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+</html>

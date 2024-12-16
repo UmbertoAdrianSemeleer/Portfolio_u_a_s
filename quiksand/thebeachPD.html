@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beach | Alex Morgan Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/project-description.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <!-- Placeholder for Header -->
+    <div id="header-placeholder"></div>
+
+    <main class="project-container">
+        <section class="project-header">
+            <h1>The Beach</h1>
+            <p class="project-summary">A 2.5D shooting platformer game where you play as a soldier trying to survive the beach. This was a personal project to explore game mechanics in Unity.</p>
+        </section>
+
+        <section class="project-content">
+            <div class="project-image">
+                <img src="assets/images/project4.svg" alt="The Beach Game Cover">
+            </div>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p><strong>The Beach</strong> is a 2.5D shooting platformer game I developed as a fun, personal project to experiment with Unity's game mechanics. The game focuses on intense gameplay, where players must survive waves of enemies while navigating a challenging beach environment. This project allowed me to explore coding, design, and prototyping techniques while creating a polished, playable game.</p>
+
+                <h3>Development Process</h3>
+                <p>To bring the game to life, I followed these steps:</p>
+                <ul>
+                    <li><strong>Paper Prototyping:</strong> Created a simple paper prototype to map out the gameplay mechanics and level design.</li>
+                    <li><strong>Game Mechanics:</strong> Coded core mechanics such as player movement, shooting, and enemy AI in Unity.</li>
+                    <li><strong>Level Design:</strong> Designed the beach environment, adding interactive elements to challenge and engage players.</li>
+                    <li><strong>Visual Effects:</strong> Incorporated animations, particle effects, and sound to enhance the player experience.</li>
+                </ul>
+
+                <h3>Paper Prototype</h3>
+<p>Before diving into coding, I created a paper prototype to visualize and test gameplay mechanics. This approach allowed me to refine the core concepts and structure of the game:</p>
+<div class="video-container">
+    <iframe 
+        width="100%" 
+        height="400" 
+        src="https://www.youtube.com/embed/7B6v-TJiu9c" 
+        title="The Beach Paper Prototype Video" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+                <h3>Game Trailer</h3>
+                <p>Watch the trailer below to get a glimpse of the fast-paced, action-packed gameplay:</p>
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        src="https://www.youtube.com/embed/UP5Kn3yPykE" 
+                        title="The Beach Game Trailer" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <h3>Play the Game</h3>
+                <p>You can play <strong>The Beach</strong> online and experience the gameplay for yourself:</p>
+                <div class="pdf-view-button">
+                    <a href="https://fontys-gdt.itch.io/the-beach" target="_blank" class="btn">
+                        <i class="fas fa-gamepad"></i> Play The Beach →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Return Button -->
+        <div class="return-button">
+            <a href="index.html#projects" class="btn">← Return to Projects</a>
+        </div>
+    </main>
+
+    <!-- Placeholder for Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts to Load Header and Footer -->
+    <script>
+        // Load header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+
+        // Load footer
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+</html>

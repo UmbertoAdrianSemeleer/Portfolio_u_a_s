@@ -1,0 +1,95 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure proper spacing for logo and nav */
+  background-color: #f4f4f9;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  max-height: 50px;
+}
+
+/* Hamburger Menu Styling */
+.navTrigger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.navTrigger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #0073e6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Hide navigation links on small screens */
+      flex-direction: column;
+      background-color: #f4f4f9;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.show_list {
+      display: flex; /* Show links when toggled */
+  }
+
+  .navTrigger {
+      display: flex; /* Show hamburger menu icon */
+  }
+
+  .navTrigger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .navTrigger.active span:nth-child(2) {
+      opacity: 0; /* Hide the middle line */
+  }
+
+  .navTrigger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over the Top | Alex Morgan Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/project-description.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <!-- Placeholder for Header -->
+    <div id="header-placeholder"></div>
+
+    <main class="project-container">
+        <section class="project-header">
+            <h1>The sun killer</h1>
+            <p class="project-summary">A 3D action FPS where the player wields Pluto's powers to destroy planets in an epic battle across the vastness of space.</p>
+        </section>
+
+        <section class="project-content">
+            <div class="project-image">
+                <img src="assets/images/project5.svg" alt="Over the Top Game Cover">
+            </div>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p><strong>Over the Top</strong> is an intense 3D action first-person shooter (FPS) where players take on the role of Pluto, the God of the Underworld. Armed with his divine powers, players battle against planets in a cosmic arena. Each level is a massive platform surrounded by the vastness of space, with no walls or barriers. The goal is to destroy planets using energy projectiles while dodging their powerful counterattacks through strategic movement and special abilities.</p>
+
+                <h3>Gameplay Features</h3>
+                <ul>
+                    <li><strong>Dynamic Combat:</strong> Players engage in fast-paced combat, using energy projectiles and dodging planetary attacks.</li>
+                    <li><strong>Cosmic Arenas:</strong> Levels feature large, open platforms surrounded by a visually stunning space backdrop.</li>
+                    <li><strong>Unique Mechanics:</strong> Incorporates movement, jumping, and special abilities for evasion and tactical gameplay.</li>
+                    <li><strong>Planetary Enemies:</strong> Each enemy represents a planet, featuring unique attack patterns and behaviors.</li>
+                </ul>
+
+                <h3>Development Process</h3>
+                <p>Building "Over the Top" involved a combination of technical and creative challenges. Here’s an overview of the development process:</p>
+                <ul>
+                    <li><strong>Game Mechanics:</strong> Designed core mechanics for shooting, movement, and special abilities to create engaging and responsive gameplay.</li>
+                    <li><strong>3D Environment Design:</strong> Developed cosmic-themed arenas with large platforms and detailed space backgrounds to immerse players.</li>
+                    <li><strong>Enemy Design:</strong> Created planetary enemies with distinct attack patterns and behaviors to challenge the player.</li>
+                    <li><strong>Visual Effects:</strong> Integrated energy-based projectiles, particle effects, and vibrant space visuals to enhance the action-packed experience.</li>
+                </ul>
+                <h3>Paper Prototype</h3>
+<p>Before development, I created a paper prototype to visualize and test gameplay concepts. This early phase helped refine the game's mechanics and player experience:</p>
+<div class="video-container">
+    <iframe 
+        width="100%" 
+        height="400" 
+        src="https://www.youtube.com/embed/PWpFG21d874" 
+        title="Over the Top Paper Prototype Video" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+
+                <h3>Play the Game</h3>
+                <p>Experience the epic battles of "the sun killer" by playing the game online:</p>
+                <div class="pdf-view-button">
+                    <a href="https://fontys-gdt.itch.io/sun-killer" target="_blank" class="btn">
+                        <i class="fas fa-gamepad"></i> Play The sun killer →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Return Button -->
+        <div class="return-button">
+            <a href="index.html#projects" class="btn">← Return to Projects</a>
+        </div>
+    </main>
+
+    <!-- Placeholder for Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts to Load Header and Footer -->
+    <script>
+        // Load header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+
+        // Load footer
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+</html>

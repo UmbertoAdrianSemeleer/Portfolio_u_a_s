@@ -1,0 +1,156 @@
+/* project-description.css */
+
+/* Main Container */
+.project-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Header Styling */
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.project-summary {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Content Styling */
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Project Image Styling */
+.project-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Description Text */
+.project-description {
+  font-size: 1rem;
+  color: #333;
+}
+
+.project-description h2, .project-description h3 {
+  color: #0073e6;
+  margin-top: 1.5rem;
+}
+
+/* List Styling */
+.project-description ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.project-description ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Return Button Styling */
+.return-button {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.return-button .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #0073e6;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.return-button .btn:hover {
+  background-color: #005bb5;
+}
+
+/* Video Container Styling */
+.video-container {
+  margin: 2rem 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Image Placeholder Styling */
+.image-placeholder {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.image-placeholder img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* PDF Button Styling */
+.pdf-view-button {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.pdf-view-button .btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #d9534f;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.pdf-view-button .btn:hover {
+  background-color: #c9302c;
+}
+
+.pdf-view-button .btn i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Animation GIF Styling */
+.animation-gif {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.animation-gif img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gif-caption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-style: italic;
+}

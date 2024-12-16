@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikrolokaal | Alex Morgan Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/project-description.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <!-- Placeholder for Header -->
+    <div id="header-placeholder"></div>
+
+    <main class="project-container">
+        <section class="project-header">
+            <h1>Mikrolokaal</h1>
+            <p class="project-summary">An educational multiplayer game for kids, designed to teach the importance of probiotics and healthy living through engaging gameplay and vibrant animations.</p>
+        </section>
+
+        <section class="project-content">
+            <div class="project-image">
+                <img src="assets/images/project3.svg" alt="Main image of Mikrolokaal game project">
+            </div>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>This project was part of my specialization in game design, assigned by <strong>Games for Health</strong>, a non-profit organization that develops health-enhancing games. Our task was to improve an educational multiplayer game called <strong>"Mikrolokaal"</strong>, created for <strong>Winclove Probiotics</strong>. The game's primary goal is to teach children in grades 7 and 8 about probiotics and healthy living.</p>
+
+                <h3>Challenges and Learning Experience</h3>
+                <p>The existing game was static, with minimal interaction, animation, sound, and color. While it was developed in 2D, it was designed to look like a 3D game. Our challenge was to make the game more fun and educational for kids, who typically have short attention spans.</p>
+                <p>To address these issues, I had to learn animation techniques, including the <strong>12 Principles of Animation</strong>, and study how to add effects and structure components in Unity. One major obstacle was the lack of comments or documentation in the game's code, requiring us to reverse-engineer and understand it independently.</p>
+                <!-- GIF of 12 Principles of Animation -->
+<div class="animation-gif">
+    <img src="assets/images/12-principles.gif" alt="12 Principles of Animation GIF">
+    <p class="gif-caption">The 12 Principles of Animation served as a guide for creating engaging and lively animations in Mikrolokaal.</p>
+</div>
+
+                <h3>Development Process</h3>
+                <p>Our team employed several creative techniques to enhance the game:</p>
+                <ul>
+                    <li><strong>Animation Prototyping:</strong> Used paper prototypes and stop-motion techniques to quickly conceptualize animations.</li>
+                    <li><strong>Sandbox Environment:</strong> Created a sandbox environment in Unity for rapid iteration and testing of new features.</li>
+                    <li><strong>Research-Driven Design:</strong> Incorporated insights from color theory and educational design principles to make the game visually engaging.</li>
+                    <li><strong>User Testing:</strong> Tested the updated game with over 80 kids during the <strong>Night of the Nerds</strong> event, gathering valuable feedback.</li>
+                </ul>
+              
+
+                <h3>Outcome</h3>
+                <p>The game was traditionally controlled by teachers, who set the difficulty level. During playtesting, we discovered that letting kids take control of the game created a more personal, competitive, and engaging experience. While figuring out the game’s rules, kids unexpectedly started teaching each other about gut health—a testament to the game’s success in fostering peer learning.</p>
+
+                <h3>Reflection</h3>
+                <p>Engaging kids in testing and feedback was initially challenging. Even offering candy as an incentive didn’t work. However, through persistent experimentation and iteration, we managed to create a game that not only entertained but also educated in a meaningful way.</p>
+
+                <h3>Project Files</h3>
+                <p>there link to dowload the game and how to play with detailed instructions</p>
+               ]
+                <div class="pdf-view-button">
+                    <a href="https://fontysmade.nl/mikrolokaal/" target="_blank" class="btn">
+                        <i class="fas fa-download"></i> Download Mikrolokaal Game →
+                    </a>
+                </div>
+                
+
+                <!-- Demo Video -->
+                
+                <h3>Project Demo</h3>
+                <p>Watch the game trailer below to see the improvements we made to "Mikrolokaal." This video showcases vibrant animations, interactive gameplay, and how the game teaches kids about gut health through fun and engaging mechanics:</p>
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        src="https://www.youtube.com/embed/DkYPOtq10Pw" 
+                        title="Mikrolokaal Game Trailer" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <!-- Return Button -->
+        <div class="return-button">
+            <a href="index.html#projects" class="btn">← Return to Projects</a>
+        </div>
+    </main>
+
+    <!-- Placeholder for Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts to Load Header and Footer -->
+    <script>
+        // Load header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+
+        // Load footer
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+</html>

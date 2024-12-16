@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umberto Semeleer | UX/UI Designer Portfolio</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hero-slideshow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="slideshow"></div> <!-- Slideshow container for background images -->
+        <div class="hero-content">
+            <h1>Welcome to my Portfolio</h1>
+            <p>UX/UI & Front-End Developer, crafting digital and physical experiences.</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="section-container">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="profile-pic-placeholder">
+                    <img src="assets/images/umberto.jpg" alt="Umberto Semeleer's Profile Picture">
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm Umberto Semeleer, a UX/UI designer, front-end developer, and game design specialist dedicated to creating impactful, user-centered experiences. My passion lies in developing products that make mental and physical health, as well as education-related topics, more engaging through gamification and improved accessibility. I’m also enthusiastic about business-oriented projects that enhance customer engagement and foster long-term loyalty.
+                    </p>
+                    <a href="#" class="btn">Download Resume</a>
+                    <a href="https://www.linkedin.com/in/umberto-semeleer-28964b240" class="btn">LinkedIn Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-container">
+            <h2>My Projects</h2>
+            <div class="project-card-container">
+                <!-- Individual Project Cards -->
+                <div class="project-card">
+                    <img src="assets/images/project1.svg" alt="The Future Company Thumbnail" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">The Future Company</h3>
+                        <p class="project-description">A white label VOIP management platform.</p>
+                        <a href="simptelPD.html" class="btn">Learn More</a>
+
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project2.svg" alt="Loyalties of Lucifer Thumbnail" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">The Loyalties of Lucifer</h3>
+                        <p class="project-description">A loyalty program for the Coffee Shop Lucifer in Eindhoven.</p>
+                        <a href="luciferPD.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/Bierens_logo.png" alt="Bierens Heroes Thumbnail" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Bierens Heroes</h3>
+                        <p class="project-description">A referral and loyalty program for Bierens Incasso Advocaten.</p>
+                        <a href="Bierens hero.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project3.svg" alt="Mikrolokaal Thumbnail" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Mikrolokaal</h3>
+                        <p class="project-description">An educational game to teach kids about the importance of probiotics.</p>
+                        <a href="MircolokaalPD.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project4.svg" alt="The Beach Thumbnail" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">The Beach</h3>
+                        <p class="project-description">A 2.5D shooting platformer game, play as a soldier trying to survive the beach.</p>
+                        <a href="thebeachPD.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project5.svg" alt="The Sun Killer Thumbnail" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">The Sun Killer</h3>
+                        <p class="project-description">A 3D FPS Shooting game, play as Pluto and fight the Sun.</p>
+                        <a href="thesunnkillerPD.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project6.svg" alt="MDMA Jenga Thumbnail" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">MDMA Jenga</h3>
+                        <p class="project-description">An icebreaker to raise awareness about the effects and consequences of MDMA use.</p>
+                        <a href="mdma jenga.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script>
+        // Slideshow
+        const images = [
+            'assets/images/slide_image_1.jpg',
+            'assets/images/slide_image_2.jpg',
+            'assets/images/slide_image_3.jpg'
+        ];
+        let currentIndex = 0;
+        const slideshow = document.querySelector('.slideshow');
+
+        function changeBackgroundImage() {
+            slideshow.style.backgroundImage = `url(${images[currentIndex]})`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        setInterval(changeBackgroundImage, 5000);
+
+        // Load header and footer
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    </script>
+</body>
+</html>

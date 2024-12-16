@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Loyalty Program | Alex Morgan Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/project-description.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <!-- Placeholder for Header -->
+    <div id="header-placeholder"></div>
+
+    <main class="project-container">
+        <section class="project-header">
+            <h1>The Loyalty Program for Lucifer Coffee Roasters</h1>
+            <p class="project-summary">Semester 3 project: Designing a loyalty program for a small coffee shop in Eindhoven, integrating NFC technology to enhance customer experience.</p>
+        </section>
+
+        <section class="project-content">
+            <div class="project-image">
+                <img src="assets/images/project2.svg" alt="Main image of the project">
+            </div>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>This semester-long project involved designing a loyalty program for <strong>Lucifer Coffee Roasters</strong>, a small coffee shop in Eindhoven. The assignment, issued by <strong>Team Liquid</strong>, tasked us with selecting a company or organization and developing a loyalty program to inspire ideas for their existing program, <strong>Liquid+</strong>, which focuses on fan engagement.</p>
+                <p>We worked as a branding agency to create a mock brand and acted as consultants for Lucifer Coffee Roasters. Our chosen solution had to incorporate <strong>NFC technology</strong>, offering both physical and digital elements, while addressing challenges posed by the COVID-19 pandemic and local controversies surrounding QR codes.</p>
+
+                <h3>My Role and Responsibilities</h3>
+                <p>As a team member, I contributed to various aspects of the project, including:</p>
+                <ul>
+                    <li><strong>Prototyping:</strong> Designed the loyalty program prototype in Figma, creating an intuitive and visually appealing user interface.</li>
+                    <li><strong>Front-End Development:</strong> Developed the front-end system for the loyalty program, ensuring it aligned with the mock brand's style and user requirements.</li>
+                    <li><strong>Back-End Integration:</strong> Worked on integrating NFC technology into the program, enabling seamless point collection and redemption.</li>
+                    <li><strong>Database Management:</strong> Designed and implemented the database to store loyalty points, transaction history, and customer information.</li>
+                </ul>
+
+                <h3>Challenges and Learning Experience</h3>
+                <p>This project presented unique challenges that required creative solutions:</p>
+                <ul>
+                    <li><strong>COVID-19 Impact:</strong> During the pandemic, vaccination proof via QR codes was required to access public spaces. However, QR codes were controversial and associated with riots in Eindhoven. To address this, we opted for <strong>NFC tags</strong> as a less controversial and more engaging alternative.</li>
+                    <li><strong>Understanding Customer Needs:</strong> Visiting Lucifer Coffee Roasters and speaking with managers and clients revealed that most customers valued the in-person experience over online solutions. Managers were open to a mix of physical and digital approaches.</li>
+                    <li><strong>Balancing Physical and Digital:</strong> Inspired by chains like Starbucks, we designed a loyalty program that combined physical collectibles with gamification elements to enhance customer engagement.</li>
+                </ul>
+
+                <h3>Design Guidelines and Implementation</h3>
+                <p>Our solution, <strong>"The Loyalties of Lucifer"</strong>, was tailored to reflect the coffee shop’s unique brand identity while addressing client needs. Key features included:</p>
+                <ul>
+                    <li><strong>NFC Trinkets:</strong> Customizable trinkets embedded with NFC tags allowed customers to earn and redeem loyalty points.</li>
+                    <li><strong>Gamification:</strong> Introduced tasks like visiting multiple times a day or purchasing specific items to earn bonus points, creating a fun and engaging experience.</li>
+                    <li><strong>Physical-First Approach:</strong> Focused on physical elements while offering optional online integration, respecting customer preferences for tangible rewards.</li>
+                </ul>
+
+                <h3>Achievements</h3>
+                <p>Despite the challenges, we successfully delivered a functional and engaging loyalty program. Key outcomes included:</p>
+                <ul>
+                    <li><strong>Innovative Design:</strong> Created a unique loyalty system that blended traditional rewards with modern NFC technology.</li>
+                    <li><strong>Customer-Focused Approach:</strong> Addressed concerns about QR codes by offering an imaginative, secure alternative.</li>
+                    <li><strong>Functional Prototype:</strong> Delivered a working prototype that demonstrated how the loyalty program could operate in real-world scenarios.</li>
+                </ul>
+                <h3>Project Demo</h3>
+                <p>Watch this demo video showcasing "The Loyalties of Lucifer" loyalty program in action. It highlights key features, including NFC trinkets, point collection, and redemption processes:</p>
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        src="https://www.youtube.com/embed/gpuiuDlK0T0" 
+                        title="Project Demo: The Loyalties of Lucifer" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h3>Project Files</h3>
+                <p>Due to the academic nature of the project, some files remain confidential. However, I am allowed to share the prototype and accompanying documentation:</p>
+                <div class="pdf-view-button">
+                    <a href="https://www.figma.com/design/6wh7SLcUOdVlJ80Rq8WDRG/lucifer?node-id=0-1&t=SkBCciTSbQPOFDdN-1" target="_blank" class="btn">
+                        <i class="fas fa-external-link-alt"></i> View Figma Prototype →
+                    </a>
+                </div>
+                <div class="pdf-view-button">
+                    <a href="assets/files/nfc-integration.pdf" target="_blank" class="btn">
+                        <i class="fas fa-file-pdf"></i> NFC Integration Documentation →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Return Button -->
+        <div class="return-button">
+            <a href="index.html#projects" class="btn">← Return to Projects</a>
+        </div>
+    </main>
+
+    <!-- Placeholder for Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts to Load Header and Footer -->
+    <script>
+        // Load header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+
+        // Load footer
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+</html>
