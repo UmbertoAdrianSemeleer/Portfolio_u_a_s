@@ -54,6 +54,17 @@ header {
   color: #0073e6;
 }
 
+.logo {
+  text-decoration: none;
+  color: #fff; /* Match link color */
+  font-size: 1.5rem; /* Keep it slightly larger */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover {
+  color: #0073e6; /* Match hover effect of nav links */
+}
 /* Hamburger Menu */
 .hamburger {
   display: none;
